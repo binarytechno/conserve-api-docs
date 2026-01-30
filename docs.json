@@ -113,7 +113,7 @@
     }
   ],
   "paths": {
-    "/v1/account-dipa": {
+    "/api/v1/account-dipa": {
       "get": {
         "summary": "[SuperAdmin] Get all account dipas with pagination",
         "tags": [
@@ -264,7 +264,7 @@
         }
       }
     },
-    "/v1/account-dipa/{id}": {
+    "/api/v1/account-dipa/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get account dipa by ID",
         "tags": [
@@ -452,7 +452,7 @@
         }
       }
     },
-    "/v1/annual-work-plans": {
+    "/api/v1/annual-work-plans": {
       "get": {
         "summary": "[SuperAdmin] Get annual work plans with pagination",
         "tags": [
@@ -561,7 +561,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/dashboard": {
+    "/api/v1/annual-work-plans/dashboard": {
       "get": {
         "summary": "[SuperAdmin] Get dashboard summary",
         "tags": [
@@ -596,7 +596,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/create": {
+    "/api/v1/annual-work-plans/create": {
       "post": {
         "summary": "[SuperAdmin] Create annual work plan with clean structure",
         "description": "Create an annual work plan using simplified clean structure with nested outputs, activities, sub-activities and details. Gets landscape_id from authenticated user, sets is_request_unlock to true, status to need_approval, and calculates totals bottom-up.",
@@ -677,7 +677,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/edit": {
+    "/api/v1/annual-work-plans/{id}/edit": {
       "put": {
         "summary": "[SuperAdmin] Edit annual work plan with clean structure",
         "description": "Edit an existing annual work plan using clean structure format.\nThis endpoint performs a full replacement of the nested hierarchy\n(outputs, activities, sub-activities, and details) while maintaining\nthe same AWP ID and core metadata.\n\nKey features:\n- Full replacement of nested structure\n- Bottom-up calculation of totals\n- Validation of user permissions\n- Status-based edit restrictions\n- Transaction-based updates\n\nRestrictions:\n- Cannot edit approved work plans\n- Cannot change year\n- Must belong to user's landscape\n",
@@ -769,7 +769,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/page-summary": {
+    "/api/v1/annual-work-plans/page-summary": {
       "get": {
         "summary": "[SuperAdmin] Get PAGE Summary for Annual Work Plans - Admin Lanskap",
         "tags": [
@@ -853,7 +853,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/coa-sub-activities": {
+    "/api/v1/annual-work-plans/coa-sub-activities": {
       "get": {
         "summary": "[SuperAdmin] Get COA sub activities",
         "tags": [
@@ -906,7 +906,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/budget-remaining": {
+    "/api/v1/annual-work-plans/budget-remaining": {
       "get": {
         "summary": "[SuperAdmin] Get budget remaining",
         "tags": [
@@ -959,7 +959,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/budget-allocation-remaining-by-coa": {
+    "/api/v1/annual-work-plans/budget-allocation-remaining-by-coa": {
       "get": {
         "summary": "[SuperAdmin] Get budget allocation remaining by COA with detailed calculations",
         "tags": [
@@ -1049,7 +1049,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/aggregated/{year}": {
+    "/api/v1/annual-work-plans/aggregated/{year}": {
       "get": {
         "summary": "[SuperAdmin] Get aggregated annual work plans by year",
         "tags": [
@@ -1104,7 +1104,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/super-admin-summary": {
+    "/api/v1/annual-work-plans/super-admin-summary": {
       "get": {
         "summary": "[SuperAdmin] Get super admin summary",
         "tags": [
@@ -1166,7 +1166,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/admin-summary": {
+    "/api/v1/annual-work-plans/admin-summary": {
       "get": {
         "summary": "[Admin] Get admin summary (filtered by user's landscape)",
         "tags": [
@@ -1280,7 +1280,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}": {
+    "/api/v1/annual-work-plans/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get annual work plan by ID",
         "tags": [
@@ -1494,7 +1494,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/dashboard": {
+    "/api/v1/annual-work-plans/{id}/dashboard": {
       "get": {
         "summary": "[SuperAdmin] Get dashboard data for specific plan",
         "tags": [
@@ -1550,7 +1550,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/revisions": {
+    "/api/v1/annual-work-plans/{id}/revisions": {
       "get": {
         "summary": "[SuperAdmin] Get revision history for annual work plan",
         "tags": [
@@ -1633,7 +1633,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/unlock-history": {
+    "/api/v1/annual-work-plans/{id}/unlock-history": {
       "get": {
         "summary": "[Admin] Get unlock history for annual work plan",
         "tags": [
@@ -1689,7 +1689,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/status": {
+    "/api/v1/annual-work-plans/{id}/status": {
       "patch": {
         "summary": "[SuperAdmin] Update annual work plan status",
         "tags": [
@@ -1780,7 +1780,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/request-edit-access": {
+    "/api/v1/annual-work-plans/{id}/request-edit-access": {
       "post": {
         "summary": "[SuperAdmin] Request edit access for annual work plan with notadinas upload",
         "tags": [
@@ -1897,7 +1897,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/coa-sub-activities": {
+    "/api/v1/annual-work-plans/{id}/coa-sub-activities": {
       "get": {
         "summary": "[SuperAdmin] Get COA sub activities for annual work plan (Admin Lanskap)",
         "tags": [
@@ -2014,7 +2014,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/detail": {
+    "/api/v1/annual-work-plans/{id}/detail": {
       "get": {
         "summary": "[SuperAdmin] Get detailed annual work plan with complete hierarchy (Admin Lanskap)",
         "tags": [
@@ -2085,7 +2085,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/page-detail": {
+    "/api/v1/annual-work-plans/{id}/page-detail": {
       "get": {
         "summary": "[SuperAdmin] Get PAGE Detail for Annual Work Plan - Admin Lanskap",
         "tags": [
@@ -2156,7 +2156,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/components/revision-history": {
+    "/api/v1/annual-work-plans/{id}/components/revision-history": {
       "get": {
         "summary": "[SuperAdmin] Get revision history for annual work plan components (Admin Lanskap)",
         "tags": [
@@ -2254,7 +2254,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{awpId}/components/{componentId}": {
+    "/api/v1/annual-work-plans/{awpId}/components/{componentId}": {
       "delete": {
         "summary": "[SuperAdmin] Delete Annual Work Plan component (Admin Lanskap)",
         "tags": [
@@ -2346,7 +2346,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{year}": {
+    "/api/v1/annual-work-plans/{year}": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get aggregated annual work plans by year",
         "tags": [
@@ -2402,7 +2402,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{year}/{id}": {
+    "/api/v1/annual-work-plans/{year}/{id}": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get specific landscape annual work plan by year and ID",
         "tags": [
@@ -2569,7 +2569,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{year}/{id}/dashboard": {
+    "/api/v1/annual-work-plans/{year}/{id}/dashboard": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get annual work plan dashboard data",
         "tags": [
@@ -2636,7 +2636,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{year}/{id}/revision-history": {
+    "/api/v1/annual-work-plans/{year}/{id}/revision-history": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get revision history",
         "tags": [
@@ -2721,7 +2721,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{year}/{id}/status": {
+    "/api/v1/annual-work-plans/{year}/{id}/status": {
       "post": {
         "summary": "[SuperAdmin] [LEGACY] Update status (POST method)",
         "tags": [
@@ -2823,7 +2823,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{year}/{id}/detail": {
+    "/api/v1/annual-work-plans/{year}/{id}/detail": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get detailed work plan",
         "tags": [
@@ -2895,7 +2895,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{year}/{id}/components/revision-history": {
+    "/api/v1/annual-work-plans/{year}/{id}/components/revision-history": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get component revision history",
         "tags": [
@@ -2967,7 +2967,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{year}/{id}/coa-sub-activities": {
+    "/api/v1/annual-work-plans/{year}/{id}/coa-sub-activities": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get COA sub activities for specific plan",
         "tags": [
@@ -3039,7 +3039,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/super-admin/summary": {
+    "/api/v1/annual-work-plans/super-admin/summary": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get super admin summary (different URL structure)",
         "tags": [
@@ -3130,7 +3130,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/budget-allocation-remaining": {
+    "/api/v1/annual-work-plans/budget-allocation-remaining": {
       "get": {
         "summary": "[SuperAdmin] [LEGACY] Get budget allocation remaining by COA",
         "tags": [
@@ -3193,7 +3193,7 @@
         }
       }
     },
-    "/v1/login": {
+    "/api/v1/login": {
       "post": {
         "summary": "[SuperAdmin] Login to get JWT with optional device token registration",
         "description": "Authenticate user with email and password. Optionally register device token for push notifications during login.",
@@ -3248,7 +3248,7 @@
         }
       }
     },
-    "/v1/refresh-token": {
+    "/api/v1/refresh-token": {
       "post": {
         "summary": "[SuperAdmin] Refresh token JWT",
         "tags": [
@@ -3293,7 +3293,7 @@
         }
       }
     },
-    "/v1/send-email-verification": {
+    "/api/v1/send-email-verification": {
       "post": {
         "summary": "[SuperAdmin] Send email verification code",
         "tags": [
@@ -3338,7 +3338,7 @@
         }
       }
     },
-    "/v1/verify-token-email-verification": {
+    "/api/v1/verify-token-email-verification": {
       "post": {
         "summary": "[SuperAdmin] Verify token email verification",
         "tags": [
@@ -3383,7 +3383,7 @@
         }
       }
     },
-    "/v1/register": {
+    "/api/v1/register": {
       "post": {
         "summary": "[SuperAdmin] Register new user",
         "tags": [
@@ -3428,7 +3428,7 @@
         }
       }
     },
-    "/v1/reset-password": {
+    "/api/v1/reset-password": {
       "post": {
         "summary": "[SuperAdmin] Reset password user",
         "tags": [
@@ -3473,7 +3473,7 @@
         }
       }
     },
-    "/v1/activate-user": {
+    "/api/v1/activate-user": {
       "post": {
         "summary": "[SuperAdmin] Activate user account and set password",
         "description": "New users can activate their account and set password using the token received via email. Token is valid for 24 hours.",
@@ -3538,7 +3538,7 @@
         }
       }
     },
-    "/v1/bank-books/status": {
+    "/api/v1/bank-books/status": {
       "get": {
         "summary": "[SuperAdmin] Get bank book system status",
         "description": "Get system status and locking information",
@@ -3572,7 +3572,7 @@
         }
       }
     },
-    "/v1/bank-books/admin": {
+    "/api/v1/bank-books/admin": {
       "get": {
         "summary": "[Admin] Get bank books list for admin landscape",
         "description": "Retrieve paginated bank books with filtering options for admin users",
@@ -3712,7 +3712,7 @@
         }
       }
     },
-    "/v1/bank-books/admin/{id}": {
+    "/api/v1/bank-books/admin/{id}": {
       "get": {
         "summary": "[Admin] Get bank book details by ID for admin",
         "description": "Retrieve detailed bank book information by ID for admin users",
@@ -3775,7 +3775,7 @@
         }
       }
     },
-    "/v1/bank-books": {
+    "/api/v1/bank-books": {
       "post": {
         "summary": "[Admin] Create a new bank book",
         "description": "Create a new bank book record",
@@ -3833,7 +3833,7 @@
         }
       }
     },
-    "/v1/bank-books/admin/{id}/export": {
+    "/api/v1/bank-books/admin/{id}/export": {
       "get": {
         "summary": "[Admin] Export bank book data for admin",
         "description": "Export bank book data in PDF or CSV format for admin users",
@@ -3902,7 +3902,7 @@
         }
       }
     },
-    "/v1/bank-books/qwp-budget/{year}/{quarter}": {
+    "/api/v1/bank-books/qwp-budget/{year}/{quarter}": {
       "get": {
         "summary": "[SuperAdmin] Get QWP budget for auto-population",
         "description": "Get Quarter Work Plan budget data for bank book auto-population",
@@ -3979,7 +3979,7 @@
         }
       }
     },
-    "/v1/bank-books/qwp-budget/{year}/{quarter}/landscape/{landscapeId}": {
+    "/api/v1/bank-books/qwp-budget/{year}/{quarter}/landscape/{landscapeId}": {
       "get": {
         "summary": "[SuperAdmin] Get landscape-specific QWP budget",
         "description": "Get Quarter Work Plan budget data for specific landscape",
@@ -4066,7 +4066,7 @@
         }
       }
     },
-    "/v1/bank-books/available-years": {
+    "/api/v1/bank-books/available-years": {
       "get": {
         "summary": "[SuperAdmin] Get available years for selection dropdown",
         "description": "Get all years that have QWP data with detailed breakdown",
@@ -4111,7 +4111,7 @@
         }
       }
     },
-    "/v1/bank-books/quarter-availability/{year}": {
+    "/api/v1/bank-books/quarter-availability/{year}": {
       "get": {
         "summary": "[SuperAdmin] Get quarter availability validation",
         "description": "Check which quarters have QWP data and can support bank book creation",
@@ -4170,7 +4170,7 @@
         }
       }
     },
-    "/v1/bank-books/landscape-budget-summary/{year}/{quarter}": {
+    "/api/v1/bank-books/landscape-budget-summary/{year}/{quarter}": {
       "get": {
         "summary": "[SuperAdmin] Get detailed landscape budget data",
         "description": "Get comprehensive budget information for all landscapes in a specific period",
@@ -4244,7 +4244,7 @@
         }
       }
     },
-    "/v1/bank-books/refund-balance-data/{year}/{quarter}": {
+    "/api/v1/bank-books/refund-balance-data/{year}/{quarter}": {
       "get": {
         "summary": "[SuperAdmin] Get refund balance data for debit transactions",
         "description": "Get available refund balance information for all landscapes",
@@ -4321,7 +4321,7 @@
         }
       }
     },
-    "/v1/bank-books/fund-status/{year}/{quarter}": {
+    "/api/v1/bank-books/fund-status/{year}/{quarter}": {
       "get": {
         "summary": "[SuperAdmin] Get fund allocation status across landscapes",
         "description": "Get comprehensive fund allocation status for all landscapes in a period",
@@ -4395,7 +4395,7 @@
         }
       }
     },
-    "/v1/bank-books/fund-status/{year}/{quarter}/landscape/{landscapeId}": {
+    "/api/v1/bank-books/fund-status/{year}/{quarter}/landscape/{landscapeId}": {
       "get": {
         "summary": "[SuperAdmin] Get specific landscape fund status",
         "description": "Get detailed fund status for a specific landscape",
@@ -4482,7 +4482,7 @@
         }
       }
     },
-    "/v1/bank-books/analytics/balance-trend/{year}": {
+    "/api/v1/bank-books/analytics/balance-trend/{year}": {
       "get": {
         "summary": "[SuperAdmin] Get balance trend analysis",
         "description": "Get balance trend analysis for a specific year across all landscapes",
@@ -4541,7 +4541,7 @@
         }
       }
     },
-    "/v1/bank-books/analytics/transaction-summary/{year}/{quarter}": {
+    "/api/v1/bank-books/analytics/transaction-summary/{year}/{quarter}": {
       "get": {
         "summary": "[SuperAdmin] Get transaction summary analysis",
         "description": "Get transaction summary analysis for a specific period across all landscapes",
@@ -4615,7 +4615,7 @@
         }
       }
     },
-    "/v1/bank-books/admin/{id}/workflow-status": {
+    "/api/v1/bank-books/admin/{id}/workflow-status": {
       "get": {
         "summary": "[Admin] Get workflow status for Admin Lanskap",
         "description": "Check if admin can create transactions and current workflow stage",
@@ -4678,7 +4678,7 @@
         }
       }
     },
-    "/v1/bank-books/{id}/can-create-transactions": {
+    "/api/v1/bank-books/{id}/can-create-transactions": {
       "get": {
         "summary": "[SuperAdmin] Check if user can create transactions",
         "description": "Validate transaction creation permissions based on workflow and role",
@@ -4741,7 +4741,7 @@
         }
       }
     },
-    "/v1/bank-books/admin/{id}/transactions": {
+    "/api/v1/bank-books/admin/{id}/transactions": {
       "post": {
         "summary": "[Admin] Add new transaction to admin bank book",
         "description": "Create a new transaction for admin's bank book",
@@ -4817,7 +4817,7 @@
         }
       }
     },
-    "/v1/bank-books/{id}/audit-trail": {
+    "/api/v1/bank-books/{id}/audit-trail": {
       "get": {
         "summary": "[SuperAdmin] Get audit trail for bank book changes",
         "description": "Get comprehensive audit trail for all bank book modifications",
@@ -4880,7 +4880,7 @@
         }
       }
     },
-    "/v1/budget-allocations": {
+    "/api/v1/budget-allocations": {
       "get": {
         "summary": "[SuperAdmin] Get all budget allocations with pagination",
         "tags": [
@@ -5033,7 +5033,7 @@
         }
       }
     },
-    "/v1/budget-allocations/{id}": {
+    "/api/v1/budget-allocations/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get budget allocation by ID",
         "tags": [
@@ -5245,7 +5245,7 @@
         }
       }
     },
-    "/v1/budget-allocations/{id}/components": {
+    "/api/v1/budget-allocations/{id}/components": {
       "post": {
         "summary": "[SuperAdmin] Add a new component to budget allocation",
         "tags": [
@@ -5346,7 +5346,7 @@
         }
       }
     },
-    "/v1/budget-allocations/components/{componentId}": {
+    "/api/v1/budget-allocations/components/{componentId}": {
       "put": {
         "summary": "[SuperAdmin] Update budget allocation component and its COAs",
         "tags": [
@@ -5506,7 +5506,7 @@
         }
       }
     },
-    "/v1/budget-allocations/export": {
+    "/api/v1/budget-allocations/export": {
       "get": {
         "summary": "[SuperAdmin] Export budget allocations to CSV/Excel",
         "tags": [
@@ -5579,7 +5579,7 @@
         }
       }
     },
-    "/v1/budget-allocations/{budgetId}/components/{componentId}/edit": {
+    "/api/v1/budget-allocations/{budgetId}/components/{componentId}/edit": {
       "get": {
         "summary": "[Admin] Get budget allocation and component data for editing",
         "tags": [
@@ -5646,7 +5646,7 @@
         }
       }
     },
-    "/v1/budget-allocations/{budgetId}/components/{componentId}/histories": {
+    "/api/v1/budget-allocations/{budgetId}/components/{componentId}/histories": {
       "get": {
         "summary": "[SuperAdmin] Get budget allocation component histories with pagination",
         "tags": [
@@ -5731,7 +5731,7 @@
         }
       }
     },
-    "/v1/cash-counts/upsert": {
+    "/api/v1/cash-counts/upsert": {
       "post": {
         "summary": "[Admin] Upsert cash count data for a general ledger",
         "description": "Create or update cash count records for all valid denominations (100000, 50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50). Missing denominations will be set to 0.",
@@ -5792,7 +5792,7 @@
         }
       }
     },
-    "/v1/cash-counts/general-ledger/{general_ledger_id}": {
+    "/api/v1/cash-counts/general-ledger/{general_ledger_id}": {
       "get": {
         "summary": "[SuperAdmin] Get cash count data by general ledger ID",
         "description": "Retrieve cash count data for a specific general ledger. Returns all valid denominations, with 0 amount for denominations not yet recorded.",
@@ -5853,7 +5853,7 @@
         }
       }
     },
-    "/v1/coa": {
+    "/api/v1/coa": {
       "get": {
         "summary": "[SuperAdmin] Get all COA with pagination",
         "tags": [
@@ -5994,7 +5994,7 @@
         }
       }
     },
-    "/v1/coa/all": {
+    "/api/v1/coa/all": {
       "get": {
         "summary": "[SuperAdmin] Get all COA without pagination",
         "tags": [
@@ -6029,7 +6029,7 @@
         }
       }
     },
-    "/v1/coa/hierarchy": {
+    "/api/v1/coa/hierarchy": {
       "get": {
         "summary": "[SuperAdmin] Get COA hierarchy tree",
         "tags": [
@@ -6064,7 +6064,7 @@
         }
       }
     },
-    "/v1/coa/{id}": {
+    "/api/v1/coa/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get COA by ID",
         "tags": [
@@ -6242,7 +6242,7 @@
         }
       }
     },
-    "/v1/coa/parent/{parentId}": {
+    "/api/v1/coa/parent/{parentId}": {
       "get": {
         "summary": "[SuperAdmin] Get COA by parent ID",
         "tags": [
@@ -6296,7 +6296,7 @@
         }
       }
     },
-    "/v1/component-outputs": {
+    "/api/v1/component-outputs": {
       "get": {
         "summary": "[SuperAdmin] Get all component outputs with pagination",
         "tags": [
@@ -6445,7 +6445,7 @@
         }
       }
     },
-    "/v1/component-outputs/all": {
+    "/api/v1/component-outputs/all": {
       "get": {
         "summary": "[SuperAdmin] Get all component outputs without pagination",
         "tags": [
@@ -6480,7 +6480,7 @@
         }
       }
     },
-    "/v1/component-outputs/{id}": {
+    "/api/v1/component-outputs/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get component output by ID",
         "tags": [
@@ -6661,7 +6661,7 @@
         }
       }
     },
-    "/v1/component-outputs/component/{componentId}": {
+    "/api/v1/component-outputs/component/{componentId}": {
       "get": {
         "summary": "[SuperAdmin] Get component outputs by component ID",
         "tags": [
@@ -6715,7 +6715,7 @@
         }
       }
     },
-    "/v1/components": {
+    "/api/v1/components": {
       "get": {
         "summary": "[SuperAdmin] Get all components with pagination",
         "tags": [
@@ -6866,7 +6866,7 @@
         }
       }
     },
-    "/v1/components/{id}": {
+    "/api/v1/components/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get component by ID",
         "tags": [
@@ -7054,7 +7054,7 @@
         }
       }
     },
-    "/v1/configs": {
+    "/api/v1/configs": {
       "get": {
         "summary": "[SuperAdmin] Get all configurations with pagination",
         "description": "Retrieve all system configurations with optional pagination and filtering (Super Admin only)",
@@ -7249,7 +7249,7 @@
         ]
       }
     },
-    "/v1/configs/{id}": {
+    "/api/v1/configs/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get configuration by ID",
         "description": "Retrieve a specific configuration by its unique ID (Super Admin only)",
@@ -7503,7 +7503,7 @@
         ]
       }
     },
-    "/v1/configs/name/{name}": {
+    "/api/v1/configs/name/{name}": {
       "get": {
         "summary": "[SuperAdmin] Get configuration by name",
         "description": "Retrieve a specific configuration by its unique name (Super Admin only)",
@@ -7582,7 +7582,7 @@
         ]
       }
     },
-    "/v1/configs/exchange-rate": {
+    "/api/v1/configs/exchange-rate": {
       "get": {
         "summary": "[SuperAdmin] Get current USD to IDR exchange rate",
         "description": "Get the current USD to IDR exchange rate from system configuration (Super Admin only)",
@@ -7652,7 +7652,7 @@
         ]
       }
     },
-    "/v1/landscapes": {
+    "/api/v1/landscapes": {
       "get": {
         "summary": "[SuperAdmin] Get all landscapes",
         "description": "Retrieve a list of all landscapes",
@@ -7771,7 +7771,7 @@
         }
       }
     },
-    "/v1/landscapes/{id}": {
+    "/api/v1/landscapes/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get landscape by ID",
         "description": "Retrieve a specific landscape by its ID",
@@ -8009,7 +8009,7 @@
         }
       }
     },
-    "/v1/notifications": {
+    "/api/v1/notifications": {
       "get": {
         "tags": [
           "[SuperAdmin] Notifications"
@@ -8104,7 +8104,7 @@
         }
       }
     },
-    "/v1/notifications/unread": {
+    "/api/v1/notifications/unread": {
       "get": {
         "tags": [
           "[SuperAdmin] Notifications"
@@ -8196,7 +8196,7 @@
         }
       }
     },
-    "/v1/notifications/unread/count": {
+    "/api/v1/notifications/unread/count": {
       "get": {
         "tags": [
           "[SuperAdmin] Notifications"
@@ -8249,7 +8249,7 @@
         }
       }
     },
-    "/v1/notifications/{id}/read": {
+    "/api/v1/notifications/{id}/read": {
       "patch": {
         "tags": [
           "[SuperAdmin] Notifications"
@@ -8312,7 +8312,7 @@
         }
       }
     },
-    "/v1/notifications/read-all": {
+    "/api/v1/notifications/read-all": {
       "patch": {
         "tags": [
           "[SuperAdmin] Notifications"
@@ -8365,7 +8365,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans": {
+    "/api/v1/quarter-work-plans": {
       "get": {
         "summary": "[SuperAdmin] Get quarter work plans with pagination",
         "tags": [
@@ -8515,7 +8515,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/super-admin-summary": {
+    "/api/v1/quarter-work-plans/super-admin-summary": {
       "get": {
         "summary": "[SuperAdmin] Get super admin summary of quarter work plans (all landscapes)",
         "tags": [
@@ -8628,7 +8628,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/dashboard": {
+    "/api/v1/quarter-work-plans/dashboard": {
       "get": {
         "summary": "[SuperAdmin] Get quarter work plans dashboard summary",
         "tags": [
@@ -8669,7 +8669,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/coa-sub-activities": {
+    "/api/v1/quarter-work-plans/coa-sub-activities": {
       "get": {
         "summary": "[SuperAdmin] Get COA sub activities (global endpoint)",
         "tags": [
@@ -8781,7 +8781,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/budget-remaining": {
+    "/api/v1/quarter-work-plans/budget-remaining": {
       "get": {
         "summary": "[SuperAdmin] Get budget remaining information",
         "tags": [
@@ -8881,7 +8881,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/coa-landscape-summary/{year}/{quarter}": {
+    "/api/v1/quarter-work-plans/coa-landscape-summary/{year}/{quarter}": {
       "get": {
         "summary": "[SuperAdmin] Get COA landscape summary by year and quarter (table format)",
         "tags": [
@@ -9001,7 +9001,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/landscape/{landscape_id}/{year}/{quarter}": {
+    "/api/v1/quarter-work-plans/landscape/{landscape_id}/{year}/{quarter}": {
       "get": {
         "summary": "[SuperAdmin] Get individual landscape quarter work plan",
         "tags": [
@@ -9102,7 +9102,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}": {
+    "/api/v1/quarter-work-plans/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get quarter work plan by ID",
         "tags": [
@@ -9157,7 +9157,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/dashboard": {
+    "/api/v1/quarter-work-plans/{id}/dashboard": {
       "get": {
         "summary": "[SuperAdmin] Get dashboard data for specific quarter work plan",
         "tags": [
@@ -9212,7 +9212,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/admin-summary": {
+    "/api/v1/quarter-work-plans/admin-summary": {
       "get": {
         "summary": "[SuperAdmin] Get admin summary of quarter work plans (filtered by landscape)",
         "tags": [
@@ -9327,7 +9327,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/page-summary": {
+    "/api/v1/quarter-work-plans/page-summary": {
       "get": {
         "summary": "[SuperAdmin] Get quarter work plan page summary with filters (Super Admin)",
         "tags": [
@@ -9791,7 +9791,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/status": {
+    "/api/v1/quarter-work-plans/{id}/status": {
       "patch": {
         "summary": "[SuperAdmin] Update quarter work plan status (Super Admin only)",
         "tags": [
@@ -9885,7 +9885,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/approve": {
+    "/api/v1/quarter-work-plans/{id}/approve": {
       "post": {
         "summary": "[SuperAdmin] Approve quarter work plan (Super Admin only)",
         "tags": [
@@ -9967,7 +9967,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/reject": {
+    "/api/v1/quarter-work-plans/{id}/reject": {
       "post": {
         "summary": "[SuperAdmin] Reject quarter work plan (Super Admin only)",
         "tags": [
@@ -10055,7 +10055,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/landscape/{landscapeId}/detail": {
+    "/api/v1/quarter-work-plans/landscape/{landscapeId}/detail": {
       "get": {
         "summary": "[SuperAdmin] Get detailed quarter work plan by landscape",
         "tags": [
@@ -10327,7 +10327,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/export/csv": {
+    "/api/v1/quarter-work-plans/export/csv": {
       "get": {
         "summary": "[SuperAdmin] Export quarter work plans to CSV",
         "tags": [
@@ -10389,7 +10389,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/export/pdf": {
+    "/api/v1/quarter-work-plans/{id}/export/pdf": {
       "get": {
         "summary": "[SuperAdmin] Export quarter work plan to PDF",
         "tags": [
@@ -10432,7 +10432,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/revision-history": {
+    "/api/v1/quarter-work-plans/{id}/revision-history": {
       "get": {
         "summary": "[SuperAdmin] Get revision history for quarter work plan",
         "tags": [
@@ -10568,7 +10568,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/revisions": {
+    "/api/v1/quarter-work-plans/{id}/revisions": {
       "get": {
         "summary": "[SuperAdmin] Get revisions for quarter work plan (contract compliant)",
         "tags": [
@@ -10661,7 +10661,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/unlock-history": {
+    "/api/v1/quarter-work-plans/{id}/unlock-history": {
       "get": {
         "summary": "[SuperAdmin] Get unlock history for quarter work plan",
         "tags": [
@@ -10762,7 +10762,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/aggregated/{year}": {
+    "/api/v1/quarter-work-plans/aggregated/{year}": {
       "get": {
         "summary": "[SuperAdmin] Get aggregated quarter work plans by year with role-based filtering",
         "tags": [
@@ -10902,7 +10902,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/aggregated/{year}/{quarter}": {
+    "/api/v1/quarter-work-plans/aggregated/{year}/{quarter}": {
       "get": {
         "summary": "[SuperAdmin] Get aggregated quarter work plans by year and quarter (Super Admin view - all landscapes)",
         "tags": [
@@ -11026,7 +11026,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/summary-by-components": {
+    "/api/v1/quarter-work-plans/summary-by-components": {
       "get": {
         "summary": "[SuperAdmin] Get quarter work plan summary grouped by components (Super Admin view - all landscapes)",
         "tags": [
@@ -11151,7 +11151,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/quarter-availability/{year}": {
+    "/api/v1/quarter-work-plans/quarter-availability/{year}": {
       "get": {
         "summary": "[SuperAdmin] Check available quarters for creation by year (Super Admin view)",
         "tags": [
@@ -11267,7 +11267,7 @@
         }
       }
     },
-    "/v1/coa/{coa_code}/qwp-budget-remaining": {
+    "/api/v1/coa/{coa_code}/qwp-budget-remaining": {
       "get": {
         "summary": "[SuperAdmin] Get budget remaining for specific COA in QWP context (Super Admin view - all landscapes)",
         "tags": [
@@ -11439,7 +11439,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/create": {
+    "/api/v1/quarter-work-plans/create": {
       "post": {
         "summary": "[SuperAdmin] Create new quarter work plan (Super Admin only)",
         "tags": [
@@ -11504,7 +11504,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/edit": {
+    "/api/v1/quarter-work-plans/{id}/edit": {
       "put": {
         "summary": "[Admin] Edit quarter work plan with clean structure",
         "tags": [
@@ -11580,7 +11580,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/request-edit": {
+    "/api/v1/quarter-work-plans/{id}/request-edit": {
       "post": {
         "summary": "[SuperAdmin] Request edit access for quarter work plan (Admin)",
         "tags": [
@@ -11662,7 +11662,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/coa-sub-activities": {
+    "/api/v1/quarter-work-plans/{id}/coa-sub-activities": {
       "get": {
         "summary": "[SuperAdmin] Get COA sub activities for specific quarter work plan (Super Admin)",
         "tags": [
@@ -11766,7 +11766,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/unlock-requests": {
+    "/api/v1/quarter-work-plans/unlock-requests": {
       "get": {
         "summary": "[SuperAdmin] Get all unlock requests (Super Admin only)",
         "tags": [
@@ -11963,7 +11963,7 @@
         }
       }
     },
-    "/v1/reference/components": {
+    "/api/v1/reference/components": {
       "get": {
         "tags": [
           "[SuperAdmin] Reference"
@@ -12037,7 +12037,7 @@
         }
       }
     },
-    "/v1/reference/outputs": {
+    "/api/v1/reference/outputs": {
       "get": {
         "tags": [
           "[SuperAdmin] Reference"
@@ -12079,7 +12079,7 @@
         }
       }
     },
-    "/v1/reference/mak-apbn": {
+    "/api/v1/reference/mak-apbn": {
       "get": {
         "tags": [
           "[SuperAdmin] Reference"
@@ -12145,7 +12145,7 @@
         }
       }
     },
-    "/v1/reference/coa": {
+    "/api/v1/reference/coa": {
       "get": {
         "tags": [
           "[SuperAdmin] Reference"
@@ -12210,7 +12210,7 @@
         }
       }
     },
-    "/v1/reference/quantity-units": {
+    "/api/v1/reference/quantity-units": {
       "get": {
         "tags": [
           "[SuperAdmin] Reference"
@@ -12276,7 +12276,7 @@
         }
       }
     },
-    "/v1/reference/budget-remaining": {
+    "/api/v1/reference/budget-remaining": {
       "get": {
         "tags": [
           "[SuperAdmin] Reference"
@@ -12369,7 +12369,7 @@
         }
       }
     },
-    "/v1/roles": {
+    "/api/v1/roles": {
       "get": {
         "tags": [
           "[SuperAdmin] Roles"
@@ -12464,7 +12464,7 @@
         }
       }
     },
-    "/v1/available-years": {
+    "/api/v1/available-years": {
       "get": {
         "tags": [
           "[SuperAdmin] Available Years"
@@ -12636,7 +12636,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/status/super-admin": {
+    "/api/v1/annual-work-plans/{id}/status/super-admin": {
       "post": {
         "summary": "[SuperAdmin] Update annual work plan status (Super Admin)",
         "tags": [
@@ -12790,7 +12790,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/unlock-requests": {
+    "/api/v1/annual-work-plans/unlock-requests": {
       "get": {
         "summary": "[SuperAdmin] Get all unlock requests (Super Admin only)",
         "tags": [
@@ -12872,7 +12872,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/grant-access": {
+    "/api/v1/annual-work-plans/{id}/grant-access": {
       "post": {
         "summary": "[SuperAdmin] Grant edit access (Super Admin only)",
         "tags": [
@@ -12943,7 +12943,7 @@
         }
       }
     },
-    "/v1/annual-work-plans/{id}/reject-access": {
+    "/api/v1/annual-work-plans/{id}/reject-access": {
       "post": {
         "summary": "[SuperAdmin] Reject edit access request (Super Admin only)",
         "tags": [
@@ -13044,7 +13044,7 @@
         }
       }
     },
-    "/v1/create-user-by-super-admin": {
+    "/api/v1/create-user-by-super-admin": {
       "post": {
         "summary": "[SuperAdmin] Create new user by Super Admin",
         "description": "Super admin can create new users with email activation. User will receive activation email valid for 24 hours.",
@@ -13135,7 +13135,7 @@
         }
       }
     },
-    "/v1/bank-books/superadmin": {
+    "/api/v1/bank-books/superadmin": {
       "get": {
         "summary": "[SuperAdmin] Get bank books list for superadmin",
         "description": "Retrieve paginated bank books with filtering options for superadmin users (all landscapes)",
@@ -13282,7 +13282,7 @@
         }
       }
     },
-    "/v1/bank-books/superadmin/{id}": {
+    "/api/v1/bank-books/superadmin/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get bank book details by ID for superadmin",
         "description": "Retrieve detailed bank book information for superadmin users (all landscapes)",
@@ -13353,7 +13353,7 @@
         }
       }
     },
-    "/v1/bank-books/superadmin/{id}/export": {
+    "/api/v1/bank-books/superadmin/{id}/export": {
       "get": {
         "summary": "[SuperAdmin] Export bank book data for superadmin",
         "description": "Export bank book data in PDF or CSV format for superadmin users",
@@ -13430,7 +13430,7 @@
         }
       }
     },
-    "/v1/bank-books/{id}/lock": {
+    "/api/v1/bank-books/{id}/lock": {
       "put": {
         "summary": "[SuperAdmin] Toggle bank book lock status",
         "description": "Lock or unlock a bank book (Super Admin only)",
@@ -13521,7 +13521,7 @@
         }
       }
     },
-    "/v1/bank-books/{id}/fund-return-status": {
+    "/api/v1/bank-books/{id}/fund-return-status": {
       "put": {
         "summary": "[SuperAdmin] Update fund return status",
         "description": "Update fund return status for a bank book",
@@ -13624,7 +13624,7 @@
         }
       }
     },
-    "/v1/bank-books/superadmin/create": {
+    "/api/v1/bank-books/superadmin/create": {
       "post": {
         "summary": "[SuperAdmin] Create bank book with QWP budget auto-population",
         "description": "Create a new bank book with automatic QWP budget population (Super Admin only)",
@@ -13695,7 +13695,7 @@
         }
       }
     },
-    "/v1/bank-books/superadmin/{id}/fund-return-status": {
+    "/api/v1/bank-books/superadmin/{id}/fund-return-status": {
       "get": {
         "summary": "[SuperAdmin] Get fund return status for Super Admin",
         "description": "Check which landscapes have returned funds and workflow stage",
@@ -13758,7 +13758,7 @@
         }
       }
     },
-    "/v1/bank-books/superadmin/{id}/transactions": {
+    "/api/v1/bank-books/superadmin/{id}/transactions": {
       "post": {
         "summary": "[SuperAdmin] Add new transaction to superadmin bank book",
         "description": "Create a new transaction for superadmin with multi-landscape support",
@@ -13834,7 +13834,7 @@
         }
       }
     },
-    "/v1/budget-allocations/reports/summary": {
+    "/api/v1/budget-allocations/reports/summary": {
       "get": {
         "summary": "[SuperAdmin] Get budget allocation summary report",
         "tags": [
@@ -13902,7 +13902,7 @@
         }
       }
     },
-    "/v1/cash-counts/summary": {
+    "/api/v1/cash-counts/summary": {
       "get": {
         "summary": "[SuperAdmin] Get cash count summary for superadmin",
         "description": "Get aggregated cash count summary across all general ledgers for a specific year and month. Returns total amount for each denomination.",
@@ -13975,7 +13975,7 @@
         }
       }
     },
-    "/v1/notifications/by-region": {
+    "/api/v1/notifications/by-region": {
       "get": {
         "tags": [
           "[SuperAdmin] Notifications"
@@ -14094,7 +14094,7 @@
         }
       }
     },
-    "/v1/notifications/region/{regionId}/read": {
+    "/api/v1/notifications/region/{regionId}/read": {
       "patch": {
         "tags": [
           "[SuperAdmin] Notifications"
@@ -14169,7 +14169,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/update": {
+    "/api/v1/quarter-work-plans/{id}/update": {
       "put": {
         "summary": "[SuperAdmin] Update quarter work plan (Super Admin only)",
         "tags": [
@@ -14248,7 +14248,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/delete": {
+    "/api/v1/quarter-work-plans/{id}/delete": {
       "delete": {
         "summary": "[SuperAdmin] Delete quarter work plan (Super Admin only)",
         "tags": [
@@ -14311,7 +14311,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/edit-requests": {
+    "/api/v1/quarter-work-plans/edit-requests": {
       "get": {
         "summary": "[SuperAdmin] Get edit requests for quarter work plans (Super Admin)",
         "tags": [
@@ -14393,7 +14393,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/grant-edit": {
+    "/api/v1/quarter-work-plans/{id}/grant-edit": {
       "post": {
         "summary": "[SuperAdmin] Grant edit access for quarter work plan (Super Admin only)",
         "tags": [
@@ -14472,7 +14472,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/reject-edit": {
+    "/api/v1/quarter-work-plans/{id}/reject-edit": {
       "post": {
         "summary": "[SuperAdmin] Reject edit access request for quarter work plan (Super Admin only)",
         "tags": [
@@ -14557,7 +14557,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/components/revision-history": {
+    "/api/v1/quarter-work-plans/{id}/components/revision-history": {
       "get": {
         "summary": "[SuperAdmin] Get component revision history for quarter work plan (Super Admin)",
         "tags": [
@@ -14672,7 +14672,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/detail": {
+    "/api/v1/quarter-work-plans/{id}/detail": {
       "get": {
         "summary": "[SuperAdmin] Get detailed quarter work plan information (Super Admin)",
         "tags": [
@@ -14738,7 +14738,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/status/super-admin": {
+    "/api/v1/quarter-work-plans/{id}/status/super-admin": {
       "post": {
         "summary": "[SuperAdmin] Update quarter work plan status (Super Admin only)",
         "tags": [
@@ -14836,7 +14836,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/request-edit-access": {
+    "/api/v1/quarter-work-plans/{id}/request-edit-access": {
       "post": {
         "summary": "[SuperAdmin] Request edit access with notadinas upload (Admin only, Super Admin can view)",
         "tags": [
@@ -14924,7 +14924,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/grant-access": {
+    "/api/v1/quarter-work-plans/{id}/grant-access": {
       "post": {
         "summary": "[SuperAdmin] Grant edit access (Super Admin only)",
         "tags": [
@@ -15003,7 +15003,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/reject-access": {
+    "/api/v1/quarter-work-plans/{id}/reject-access": {
       "post": {
         "summary": "[SuperAdmin] Reject edit access request (Super Admin only)",
         "tags": [
@@ -15088,7 +15088,7 @@
         }
       }
     },
-    "/v1/quarter-work-plans/{id}/request-revision": {
+    "/api/v1/quarter-work-plans/{id}/request-revision": {
       "post": {
         "summary": "[SuperAdmin] Request revision (Super Admin only)",
         "tags": [
@@ -15173,7 +15173,7 @@
         }
       }
     },
-    "/v1/units": {
+    "/api/v1/units": {
       "get": {
         "summary": "[SuperAdmin] Get all units with pagination",
         "tags": [
@@ -15359,7 +15359,7 @@
         }
       }
     },
-    "/v1/units/{id}": {
+    "/api/v1/units/{id}": {
       "get": {
         "summary": "[SuperAdmin] Get unit by ID",
         "tags": [
@@ -15615,7 +15615,7 @@
         }
       }
     },
-    "/v1/users": {
+    "/api/v1/users": {
       "get": {
         "summary": "[SuperAdmin] Get all users with pagination",
         "tags": [
@@ -15751,7 +15751,7 @@
         }
       }
     },
-    "/v1/users/{uuid}": {
+    "/api/v1/users/{uuid}": {
       "get": {
         "summary": "[SuperAdmin] Get user by UUID",
         "tags": [
