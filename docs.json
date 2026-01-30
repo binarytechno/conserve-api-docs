@@ -1,22 +1,17 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Conserve API - Combined Documentation",
+    "title": "Conserve API - Documentation",
     "version": "1.0.0",
-    "description": "Combined API documentation for Admin Dashboard and Super Admin Dashboard. This documentation includes all endpoints from both admin and super admin interfaces.",
+    "description": "API documentation for Admin Dashboard and Super Admin Dashboard. This documentation includes all endpoints from both admin and super admin interfaces.",
     "license": {
       "name": "MIT",
       "url": "https://spdx.org/licenses/MIT.html"
-    },
-    "contact": {
-      "name": "Developer",
-      "url": "http://localhost:8080",
-      "email": "developer@gmail.com"
     }
   },
   "servers": [
     {
-      "url": "http://localhost:8080"
+      "url": "https://ksdae.kehutanan.go.id/conserve-finance"
     }
   ],
   "tags": [
